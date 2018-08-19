@@ -5,7 +5,7 @@
  */
 package model;
 
-import model.Product;
+import mockup.model.Product;
 
 /**
  *

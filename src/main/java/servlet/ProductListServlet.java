@@ -13,8 +13,8 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import model.Product;
-import model.ProductMockup;
+import mockup.model.Product;
+import mockup.model.ProductMockup;
 
 /**
  *

@@ -13,8 +13,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import model.ShoppingCart;
-import model.Product;
-import model.ProductMockup;
+import mockup.model.Product;
+import mockup.model.ProductMockup;
 
 /**
  *
