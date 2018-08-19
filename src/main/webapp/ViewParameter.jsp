@@ -27,10 +27,10 @@
             <input name="subjects" type ="checkbox" value="Computer Security"/>Computer Security<br>
             <input name="subjects" type ="checkbox" value="Software Process"/>Computer Security<br>
 
-        <input type="submit" value="submit"/>
-       
+            <input type="submit" value="submit"/>
+
         </form>
-        
+
         <hr>
 
         <!--param คืกการดึงตัวobjมาจากพารามิเตอร์-->

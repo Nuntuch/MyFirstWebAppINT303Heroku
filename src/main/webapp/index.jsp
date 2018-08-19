@@ -1,23 +1,23 @@
 <html>
 
- <head>
+    <head>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <title>www.naijab.com</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-<body>
+    <body>
 
- <div class="container">
+        <div class="container">
 
             <div>My name is Nuntuch</div>
 
 
-	<h1>This is index.jsp</h1>
-<h1><a href="https://dashboard.heroku.com/apps/myfirstwebappint303heroku/deploy/github">Deploy MyFristWebAppExtream</a>	</h1>
-<h2>Hello Heroku!</h2>
+            <h1>This is index.jsp</h1>
+            <h1><a href="https://dashboard.heroku.com/apps/myfirstwebappint303heroku/deploy/github">Deploy MyFristWebAppExtream</a>	</h1>
+            <h2>Hello Heroku!</h2>
 
-Menu :: <br>
+            Menu :: <br>
             <a href="CalculatorForm.html">Simple Calculator</a><br>
             <a href="PrimeNumber">Prime Checker</a><br>
             <a href="TestRequestParam">Test Request Parameter</a><br>

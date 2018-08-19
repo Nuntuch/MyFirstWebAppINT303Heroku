@@ -33,9 +33,9 @@ public class ShowCartServlet extends HttpServlet {
             throws ServletException, IOException {
         /**
          * try {
-*
+         *
          */
-        //เวลามีปัญหาที่แก้ไม่ได้ ลบโฟเดอร์build
+        //เวลามีปั�?หาที่�?�?้ไม่ได้ ลบโฟเดอร์build
         HttpSession session = request.getSession(false);
 
 //        Action  คือ xml เช่น fore ในหน้า jsp  (EL,JSTL)
@@ -47,17 +47,17 @@ public class ShowCartServlet extends HttpServlet {
                 getServletContext().getRequestDispatcher("/ShowCart.jsp").forward(request, response);
                 return;
             }
-// getServletContext() เป็นการดึงข้อมูลมาจาก appication scopt
+// getServletContext() เป็น�?ารดึงข้อมูลมาจา�? appication scopt
         }
 //        getServletContext().getRequestDispatcher("/index.html").forward(request, response);
-        response.sendError(HttpServletResponse.SC_BAD_REQUEST, "Session TimeOut .. Try again N5 Omsin Bun Error !!!  EiEi"); //เป็นการแก้error แบบง่าย ถ้าอยากให้มันไปดึงหน้า html อื่นมาให้ไปแก้ที่web.xml
+        response.sendError(HttpServletResponse.SC_BAD_REQUEST, "Session TimeOut .. Try again N5 Omsin Bun Error !!!  EiEi"); //เป็น�?าร�?�?้error �?บบง่าย ถ้าอยา�?ให้มันไปดึงหน้า html อื่นมาให้ไป�?�?้ที่web.xml
 
         /**
          * } catch (Exception e) {
          *
          *
          * // getServletContext().g }
-*
+         *
          */
 //        response.setContentType("text/html;charset=UTF-8");
 //        try (PrintWriter out = response.getWriter()) {
@@ -66,7 +66,7 @@ public class ShowCartServlet extends HttpServlet {
 //            try {
 //
 //                HttpSession session = request.getSession(false);
-//                ShoppingCart cart = (ShoppingCart) session.getAttribute("cart");//key word ในการเรียกในjsp
+//                ShoppingCart cart = (ShoppingCart) session.getAttribute("cart");//key word ใน�?ารเรีย�?ในjsp
 //
 //                
 //                

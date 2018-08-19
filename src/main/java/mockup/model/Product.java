@@ -3,8 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package mockup.model;
 
-package mockup.model ;
 import java.util.Objects;
 
 public class Product {
@@ -66,5 +66,5 @@ public class Product {
     public void setMsrp(double msrp) {
         this.msrp = msrp;
     }
-    
+
 }

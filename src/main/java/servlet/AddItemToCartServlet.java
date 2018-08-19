@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sit.int303.first.servlet;
+package servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -34,27 +34,24 @@ public class AddItemToCartServlet extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 //        response.setContentType("text/html;charset=UTF-8");
-      
-//       session คือ ตัวแปรที่อยู่ในclassต่างๆ
+
+//       session คือ ตัว�?ปรที่อยู่ในclassต่างๆ
         HttpSession session = request.getSession(true);
-        ShoppingCart cart = (ShoppingCart)session.getAttribute("cart");
-        
-        if(cart == null){
-        cart = new ShoppingCart();
-        session.setAttribute("cart", cart);
-        
+        ShoppingCart cart = (ShoppingCart) session.getAttribute("cart");
+
+        if (cart == null) {
+            cart = new ShoppingCart();
+            session.setAttribute("cart", cart);
+
         }
         String productCode = request.getParameter("productCode");
         Product p = ProductMockup.getProduct(productCode);
         cart.add(p);
-        System.out.println("ADD "+ p.getProductName());
+        System.out.println("ADD " + p.getProductName());
 //        getServletContext().getRequestDispatcher("/ProductList").forward(request, response);
-                
-        response.sendRedirect("ProductList"); //บังคับให้ผู้ใช้ส่งส่งลิ้งค์มาใหม่เพื่อไม่ให้ส่งurlเดิมมาอีก
-        
-        
-        
-        
+
+        response.sendRedirect("ProductList"); //บังคับให้ผู้ใช้ส่งส่งลิ้งค์มาใหม่เพื่อไม่ให้ส่งurlเดิมมาอี�?
+
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

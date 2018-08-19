@@ -20,9 +20,9 @@
     <body>
         <div class="container">
             <table class=" table">
-                
+
                 <jsp:include page="include/Header.jsp?title=Product Listing ::"/>    
-                
+
                 <tr>
                     <!--<td><h1>Product List ::</h1></td>-->
                     <td><a href="ShowCart"> Your Cart:(${cart.totalQuantity})</a></td>
@@ -30,8 +30,8 @@
 
 
             </table>
-                <hr>
-                
+            <hr>
+
             <!--<h1>Product List :: </h1>-->
 
 
@@ -51,14 +51,14 @@
 
 
                 </thead>
-                
+
 
                 <c:forEach items="${products}" var="p" varStatus="vs">
                     <tr>
 
                         <!--couth จะเริ่มจาก1-->
                         <!--index จะเริ่มจาก0-->
-                        
+
                         <td>${vs.count}</td>
                         <td>${p.productCode}</td>
                         <td>${p.productName}</td>

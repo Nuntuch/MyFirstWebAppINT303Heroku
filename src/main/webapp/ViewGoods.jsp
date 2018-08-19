@@ -48,28 +48,28 @@
 
                 </thead>
 
-                
-                                <c:forEach items="${products}" var="p" varStatus="vs">
-                                    <tr>
-<!--                
-                                        couth จะเริ่มจาก1
-                                        index จะเริ่มจาก0-->
-                                        
-                                        <td>${cart.totalQuantity}</td>
-                                        <td>${p.productCode}</td>
-                                        <td>${p.productName}</td>
-                                        <td>${p.productLine}</td>
-                                        <td>${p.productScale}</td>
-                                        <td>${p.msrp}</td>
-                                        <td><img src="model-images/${p.productCode}.jpg" width="120"></td>
-                
-                                
-                
-                                    </tr>
-                                </c:forEach>
 
-               
-                
+                <c:forEach items="${products}" var="p" varStatus="vs">
+                    <tr>
+                        <!--                
+                                                                couth จะเริ่มจาก1
+                                                                index จะเริ่มจาก0-->
+
+                        <td>${cart.totalQuantity}</td>
+                        <td>${p.productCode}</td>
+                        <td>${p.productName}</td>
+                        <td>${p.productLine}</td>
+                        <td>${p.productScale}</td>
+                        <td>${p.msrp}</td>
+                        <td><img src="model-images/${p.productCode}.jpg" width="120"></td>
+
+
+
+                    </tr>
+                </c:forEach>
+
+
+
 
 
 

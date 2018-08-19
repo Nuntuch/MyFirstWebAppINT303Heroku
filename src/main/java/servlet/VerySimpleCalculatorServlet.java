@@ -19,11 +19,10 @@ import model.SimpleCalculator;
  *
  * @author INT303
  */
-
 @WebServlet(
-        name = "VerySimpleCalculatorServlet", 
+        name = "VerySimpleCalculatorServlet",
         urlPatterns = {"/vsc"}
-    )
+)
 
 public class VerySimpleCalculatorServlet extends HttpServlet {
 
@@ -39,49 +38,48 @@ public class VerySimpleCalculatorServlet extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-   
-            /* TODO output your page here. You may use following sample code. */
-            PrintWriter out = response.getWriter();
-            try {
-                
-                String Strx = request.getParameter("x");
-                String Stry = request.getParameter("y");
-                String Operator = request.getParameter("operator");
 
-                System.out.println("x"+Strx);
-                System.out.println("y"+Stry);
-                System.out.println("Oper"+Operator);
-                
+        /* TODO output your page here. You may use following sample code. */
+        PrintWriter out = response.getWriter();
+        try {
+
+            String Strx = request.getParameter("x");
+            String Stry = request.getParameter("y");
+            String Operator = request.getParameter("operator");
+
+            System.out.println("x" + Strx);
+            System.out.println("y" + Stry);
+            System.out.println("Oper" + Operator);
+
 //                 double x = Double.parseDouble(Strx);
 //                double y = Double.parseDouble(Stry);
-                if (" ".equals(Operator)) {
-                    Operator = "+";
-                }
-                int x = Integer.parseInt(Strx);
-                int y = Integer.parseInt(Stry);
-                SimpleCalculator sc = new SimpleCalculator();
-                sc.setX(x);
-                sc.setY(y);
-                sc.setOperator(Operator);
-                request.setAttribute("calculator", sc);
-                getServletContext().getRequestDispatcher("/SimpleCalculatorView.jsp").forward(request, response);
-                double ans = 0;
-                
-                
-                if (!(" ".equals(Operator) || "-".equals(Operator) || "*".equals(Operator) || "/".equals(Operator))) {
+            if (" ".equals(Operator)) {
+                Operator = "+";
+            }
+            int x = Integer.parseInt(Strx);
+            int y = Integer.parseInt(Stry);
+            SimpleCalculator sc = new SimpleCalculator();
+            sc.setX(x);
+            sc.setY(y);
+            sc.setOperator(Operator);
+            request.setAttribute("calculator", sc);
+            getServletContext().getRequestDispatcher("/SimpleCalculatorView.jsp").forward(request, response);
+            double ans = 0;
 
-                    out.println("<!DOCTYPE html>");
-                    out.println("<html>");
-                    out.println("<head>");
-                    out.println("<title>Servlet VerySimpleCalculatorServlet</title>");
-                    out.println("</head>");
-                    out.println("<body>");
-                    out.println("<h1>Servlet VerySimpleCalculatorServlet at " + request.getContextPath() + "</h1>");
-                    out.println("<h1> Operator Error!!! </h1>");
-                    out.println("</body>");
-                    out.println("</html>");
+            if (!(" ".equals(Operator) || "-".equals(Operator) || "*".equals(Operator) || "/".equals(Operator))) {
 
-                } else {
+                out.println("<!DOCTYPE html>");
+                out.println("<html>");
+                out.println("<head>");
+                out.println("<title>Servlet VerySimpleCalculatorServlet</title>");
+                out.println("</head>");
+                out.println("<body>");
+                out.println("<h1>Servlet VerySimpleCalculatorServlet at " + request.getContextPath() + "</h1>");
+                out.println("<h1> Operator Error!!! </h1>");
+                out.println("</body>");
+                out.println("</html>");
+
+            } else {
 //                    switch (Operator) {
 //                        case " ":
 //                            ans = x + y;
@@ -114,23 +112,22 @@ public class VerySimpleCalculatorServlet extends HttpServlet {
                 out.println("</body>");
                 out.println("</html>");
 
-                }
-            } catch (Exception e) {
-                
-                out.println("<!DOCTYPE html>");
-                out.println("<html>");
-                out.println("<head>");
-                out.println("<title>Servlet VerySimpleCalculatorServlet</title>");
-                out.println("</head>");
-                out.println("<body>");
-                out.println("<h1>Servlet VerySimpleCalculatorServlet at " + request.getContextPath() + "</h1>");
-                out.println("<h2>Input Error</h2>");
-                out.println("</body>");
-                out.println("</html>");
-                
             }
-            
-        
+        } catch (Exception e) {
+
+            out.println("<!DOCTYPE html>");
+            out.println("<html>");
+            out.println("<head>");
+            out.println("<title>Servlet VerySimpleCalculatorServlet</title>");
+            out.println("</head>");
+            out.println("<body>");
+            out.println("<h1>Servlet VerySimpleCalculatorServlet at " + request.getContextPath() + "</h1>");
+            out.println("<h2>Input Error</h2>");
+            out.println("</body>");
+            out.println("</html>");
+
+        }
+
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

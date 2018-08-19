@@ -12,6 +12,7 @@ import mockup.model.Product;
  * @author INT303
  */
 public class LineItem {
+
     private Product product;
     private double salePrice;
     private int quantity;
@@ -20,21 +21,19 @@ public class LineItem {
     }
 
     public LineItem(Product product) {
-        this(product,1);
+        this(product, 1);
     }
-    
+
     public LineItem(Product product, int quantity) {
         this.product = product;
         this.quantity = quantity;
         this.salePrice = product.getMsrp();
     }
 
-
-    public double getTotalPrice(){
-    return  this.quantity*this.salePrice;
+    public double getTotalPrice() {
+        return this.quantity * this.salePrice;
     }
-    
-    
+
     public Product getProduct() {
         return product;
     }
@@ -58,10 +57,5 @@ public class LineItem {
     public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
-    
-    
-    
-    
-    
-    
+
 }

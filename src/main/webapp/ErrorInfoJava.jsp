@@ -14,6 +14,6 @@
     <body>
         <h1>Hello World!</h1>
         <h1>Error of Java EiEi!!!</h1>
-        
+
     </body>
 </html>

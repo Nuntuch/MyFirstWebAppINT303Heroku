@@ -31,18 +31,18 @@ public class PrimeNumberServlet extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
+
 //        request.getSession(); จะมีค่าเริ่มต้นเป็น true
-//        request.getSession(Boolean); ถ้าเป็นt แล้วไม่เคยมีเชตชั่นจะสรัางให้ แต่ถ้า f แล้วไม่มีเชตชั่นจะreturn null
+//        request.getSession(Boolean); ถ้าเป็นt �?ล้วไม่เคยมีเชตชั่นจะสรัางให้ �?ต่ถ้า f �?ล้วไม่มีเชตชั่นจะreturn null
         HttpSession session = request.getSession(true);
-        
+
         String n = request.getParameter("number");
-        
+
         if (n != null) {//เช็คว่า 
             int number = Integer.valueOf(n);
-            PrimeNumber pn = (PrimeNumber)session.getAttribute("pn");
-            
-            if(pn == null){   
+            PrimeNumber pn = (PrimeNumber) session.getAttribute("pn");
+
+            if (pn == null) {
                 pn = new PrimeNumber(number);
                 session.setAttribute("pn", pn);
             }

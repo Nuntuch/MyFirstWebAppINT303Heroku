@@ -20,30 +20,26 @@ public class SimpleCalculator {
         // switch (operator) {
         //     case "+":
         //         return x + y;
-
         //     case "-":
         //         return x - y;
-
         //     case "*":
         //         return x * y;
-
         //     case "/":
         //         return x / y;
-
         //     default:
         //         return 0;
         // }
-      if(operator.equals("+")){
-        return x+y;
-        }else if (operator.equals("-")) {
-            return x-y;
-        }else if (operator.equals("*")) {
-            return x*y;
-        }else if (operator.equals("/")) {
-            return x/y;
-        }else { 
+        if (operator.equals("+")) {
+            return x + y;
+        } else if (operator.equals("-")) {
+            return x - y;
+        } else if (operator.equals("*")) {
+            return x * y;
+        } else if (operator.equals("/")) {
+            return x / y;
+        } else {
             return 0;
-            
+
         }
 
     }
@@ -74,9 +70,7 @@ public class SimpleCalculator {
 
     @Override
     public String toString() {
-        return String.format(" X = %d y=%d, %d%s%d = %d\n",x,y,x,operator,y,getResult());
+        return String.format(" X = %d y=%d, %d%s%d = %d\n", x, y, x, operator, y, getResult());
     }
 
-    
-    
 }

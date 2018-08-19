@@ -34,9 +34,9 @@ public class ProductListServlet extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
+
         String fileLocation = getServletContext().getRealPath("/");
-        //เก็บไฟล์location เป็นString  ... 
+        //เ�?็บไฟล์location เป็นString  ... 
         String absoluteFileName = fileLocation + "WEB-INF\\products.txt";
 //        System.out.println(absoluteFileName);
 
@@ -45,7 +45,7 @@ public class ProductListServlet extends HttpServlet {
         List<Product> products = ProductMockup.getProducts();
         request.setAttribute("products", products);
         getServletContext().getRequestDispatcher("/ProductList.jsp").forward(request, response);
-        
+
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

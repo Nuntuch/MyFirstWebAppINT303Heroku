@@ -18,11 +18,10 @@ import javax.servlet.http.HttpServletResponse;//
  *
  * @author INT303
  */
-
 @WebServlet(
-        name = "SimpleCalculatorServlet", 
+        name = "SimpleCalculatorServlet",
         urlPatterns = {"/sc"}
-    )
+)
 
 public class SimpleCalculatorServlet extends HttpServlet {
 
@@ -40,50 +39,50 @@ public class SimpleCalculatorServlet extends HttpServlet {
 
         response.setContentType("text/html;charset=UTF-8");
         // try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
-            PrintWriter out = response.getWriter();
-            try {
+        /* TODO output your page here. You may use following sample code. */
+        PrintWriter out = response.getWriter();
+        try {
 
 //            int x =5;
 //            int y =3;
 //            int result = x+y;
-                String xStr = request.getParameter("x");
-                String yStr = request.getParameter("y");
-                String operator = request.getParameter("operator");
-                double x = Double.parseDouble(xStr);
-                double y = Double.parseDouble(yStr);
-                double result = x + y;
+            String xStr = request.getParameter("x");
+            String yStr = request.getParameter("y");
+            String operator = request.getParameter("operator");
+            double x = Double.parseDouble(xStr);
+            double y = Double.parseDouble(yStr);
+            double result = x + y;
 //            double x = Double.parseDouble(xStr);
 //            double y = Double.parseDouble(yStr);
 //            double result = x + y;
 
-                out.println("<!DOCTYPE html>");
-                out.println("<html>");
-                out.println("<head>");
-                out.println("<title>Servlet SimpleCalculatorServlet</title>");
-                out.println("</head>");
-                out.println("<body>");
-                out.println("<h1>Servlet SimpleCalculatorServlet at " + request.getContextPath() + "</h1>");
+            out.println("<!DOCTYPE html>");
+            out.println("<html>");
+            out.println("<head>");
+            out.println("<title>Servlet SimpleCalculatorServlet</title>");
+            out.println("</head>");
+            out.println("<body>");
+            out.println("<h1>Servlet SimpleCalculatorServlet at " + request.getContextPath() + "</h1>");
 
-                out.println(String.format("<h1> x = %.2f, y = %.2f %.2f + %.2f = %.2f</h1>\n", x, y, x, y, result));
+            out.println(String.format("<h1> x = %.2f, y = %.2f %.2f + %.2f = %.2f</h1>\n", x, y, x, y, result));
 
-                out.println("</body>");
-                out.println("</html>");
+            out.println("</body>");
+            out.println("</html>");
 
-            } catch (Exception e) {
-                out.println("<!DOCTYPE html>");
-                out.println("<html>");
-                out.println("<head>");
-                out.println("<title>Servlet SimpleCalculatorServlet</title>");
-                out.println("</head>");
-                out.println("<body>");
-                out.println("<h1>Servlet SimpleCalculatorServlet at " + request.getContextPath() + "</h1>");
+        } catch (Exception e) {
+            out.println("<!DOCTYPE html>");
+            out.println("<html>");
+            out.println("<head>");
+            out.println("<title>Servlet SimpleCalculatorServlet</title>");
+            out.println("</head>");
+            out.println("<body>");
+            out.println("<h1>Servlet SimpleCalculatorServlet at " + request.getContextPath() + "</h1>");
 
-                out.println("<h1>Invalid input !!! </h1>");
+            out.println("<h1>Invalid input !!! </h1>");
 
-                out.println("</body>");
-                out.println("</html>");
-            }
+            out.println("</body>");
+            out.println("</html>");
+        }
         // }
     }
 
