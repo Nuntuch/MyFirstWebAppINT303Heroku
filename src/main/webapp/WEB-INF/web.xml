@@ -6,19 +6,19 @@
     </servlet>
     <servlet>
         <servlet-name>VerySimpleCalculatorServlet</servlet-name>
-        <servlet-class>first.servlet.VerySimpleCalculatorServlet</servlet-class>
+        <servlet-class>servlet.VerySimpleCalculatorServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>PrimeNumberServlet</servlet-name>
-        <servlet-class>first.servlet.PrimeNumberServlet</servlet-class>
+        <servlet-class>servlet.PrimeNumberServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>AddItemToCartServlet</servlet-name>
-        <servlet-class>first.servlet.AddItemToCartServlet</servlet-class>
+        <servlet-class>servlet.AddItemToCartServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>ShowCart</servlet-name>
-        <servlet-class>first.servlet.ShowCartServlet</servlet-class>
+        <servlet-class>servlet.ShowCartServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>SimpleCalculatorServlet</servlet-name>
