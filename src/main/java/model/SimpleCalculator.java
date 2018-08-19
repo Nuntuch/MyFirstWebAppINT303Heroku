@@ -17,21 +17,33 @@ public class SimpleCalculator {
 
     public int getResult() {
 
-        switch (operator) {
-            case "+":
-                return x + y;
+        // switch (operator) {
+        //     case "+":
+        //         return x + y;
 
-            case "-":
-                return x - y;
+        //     case "-":
+        //         return x - y;
 
-            case "*":
-                return x * y;
+        //     case "*":
+        //         return x * y;
 
-            case "/":
-                return x / y;
+        //     case "/":
+        //         return x / y;
 
-            default:
-                return 0;
+        //     default:
+        //         return 0;
+        // }
+      if(operator.equals("+")){
+        return x+y;
+        }else if (operator.equals("-")) {
+            return x-y;
+        }else if (operator.equals("*")) {
+            return x*y;
+        }else if (operator.equals("/")) {
+            return x/y;
+        }else { 
+            return 0;
+            
         }
 
     }
