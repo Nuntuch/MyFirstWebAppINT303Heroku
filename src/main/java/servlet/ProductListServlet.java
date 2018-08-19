@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sit.int303.first.servlet;
+package servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -13,8 +13,8 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import sit.int303.mockup.model.Product;
-import sit.int303.mockup.model.ProductMockup;
+import model.Product;
+import model.ProductMockup;
 
 /**
  *

@@ -12,9 +12,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import sit.int303.first.model.ShoppingCart;
-import sit.int303.mockup.model.Product;
-import sit.int303.mockup.model.ProductMockup;
+import model.ShoppingCart;
+import model.Product;
+import model.ProductMockup;
 
 /**
  *

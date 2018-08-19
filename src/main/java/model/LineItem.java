@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sit.int303.first.model;
+package model;
 
-import sit.int303.mockup.model.Product;
+import model.Product;
 
 /**
  *
