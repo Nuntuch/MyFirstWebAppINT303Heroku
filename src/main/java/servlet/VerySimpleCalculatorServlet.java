@@ -39,7 +39,7 @@ public class VerySimpleCalculatorServlet extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
    
             /* TODO output your page here. You may use following sample code. */
-            
+            PrintWriter out = response.getWriter()
             try {
                 
                 String Strx = request.getParameter("x");
