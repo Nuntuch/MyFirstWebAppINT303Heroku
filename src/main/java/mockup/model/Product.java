@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package sit.int303.mockup.model ;
+package mockup.model ;
 import java.util.Objects;
 
 public class Product {

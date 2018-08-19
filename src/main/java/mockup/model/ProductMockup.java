@@ -1,4 +1,4 @@
-package sit.int303.mockup.model;
+package mockup.model;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
