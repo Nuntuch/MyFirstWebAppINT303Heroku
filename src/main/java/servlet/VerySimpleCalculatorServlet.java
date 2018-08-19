@@ -17,6 +17,12 @@ import model.SimpleCalculator;
  *
  * @author INT303
  */
+
+@WebServlet(
+        name = "VerySimpleCalculatorServlet", 
+        urlPatterns = {"/vsc"}
+    )
+
 public class VerySimpleCalculatorServlet extends HttpServlet {
 
     /**

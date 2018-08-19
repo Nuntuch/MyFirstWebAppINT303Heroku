@@ -16,6 +16,12 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author INT303
  */
+
+@WebServlet(
+        name = "SimpleCalculatorServlet", 
+        urlPatterns = {"/sc"}
+    )
+
 public class SimpleCalculatorServlet extends HttpServlet {
 
     /**
