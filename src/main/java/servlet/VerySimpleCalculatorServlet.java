@@ -5,6 +5,8 @@
  */
 package servlet;
 
+import javax.servlet.ServletOutputStream;
+import javax.servlet.annotation.WebServlet;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
