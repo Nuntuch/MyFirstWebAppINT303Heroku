@@ -13,26 +13,26 @@
     </head>
     <body>
         <h1>Prime Number Application ${pn}::</h1>
-        <!--Error 404 มักมาจากการเขียน action ในformผิด หรือลิ่งของฌซอฟเรตผิด-->
+       <!--Error 404 มักมาจากการเขียน action ในformผิด หรือลิ่งของฌซอฟเรตผิด-->
         <form action="PrimeNumber" method="post">
             Please enter number: 
             <input type="number" name="number" required min="2"/>
             <input type="submit" value="OK"/>
-
-
+        
+        
         </form>
-
-
-
-        <hr>
-        ${pn.primeNumber}
-
-        <!--boolean จะนำหน้าด้วยชื่อ  is -->
-        <!--ตัวอื่น จะนำหน้าด้วยชื่อ  get -->
-        <h4>${pn.number} is ${pn.primeNumber ?"":"not"}Prime Number</h4>
-
-
-
-
+        
+       
+       
+       <hr>
+       ${pn.primeNumber}
+       
+       <!--boolean จะนำหน้าด้วยชื่อ  is -->
+      <!--ตัวอื่น จะนำหน้าด้วยชื่อ  get -->
+       <h4>${pn.number} is ${pn.primeNumber ?"":"not"}Prime Number</h4>
+      
+       
+       
+       
     </body>
 </html>

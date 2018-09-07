@@ -1,48 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
-<!--    <servlet>
-        <servlet-name>SimpleCalculatorServlet</servlet-name>
-        <servlet-class>servlet.SimpleCalculatorServlet</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>VerySimpleCalculatorServlet</servlet-name>
-        <servlet-class>servlet.VerySimpleCalculatorServlet</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>PrimeNumberServlet</servlet-name>
-        <servlet-class>servlet.PrimeNumberServlet</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>AddItemToCartServlet</servlet-name>
-        <servlet-class>servlet.AddItemToCartServlet</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>ShowCart</servlet-name>
-        <servlet-class>servlet.ShowCartServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>SimpleCalculatorServlet</servlet-name>
-        <url-pattern>/SimpleCalcu</url-pattern>
-        <url-pattern>/sc</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>VerySimpleCalculatorServlet</servlet-name>
-        <url-pattern>/VerySimpleCalculatorServlet</url-pattern>
-        <url-pattern>/vsc</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>PrimeNumberServlet</servlet-name>
-        <url-pattern>/PrimeNumber</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>AddItemToCartServlet</servlet-name>
-        <url-pattern>/AddItemToCart</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>ShowCart</servlet-name>
-        <url-pattern>/ShowCart</url-pattern>
-    </servlet-mapping>-->
-    
+    <filter>
+        <filter-name>LoggerFilter</filter-name>
+        <filter-class>sit.int303.first.filter.LoggerFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>LoggerFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+        <dispatcher>REQUEST</dispatcher>
+        <dispatcher>FORWARD</dispatcher>
+    </filter-mapping>
     <servlet>
         <servlet-name>SimpleCalculatorServlet</servlet-name>
         <servlet-class>sit.int303.first.servlet.SimpleCalculatorServlet</servlet-class>
@@ -70,6 +37,14 @@
     <servlet>
         <servlet-name>GetProductServlet</servlet-name>
         <servlet-class>sit.int303.first.servlet.GetProductServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ProductListServlet</servlet-name>
+        <servlet-class>sit.int303.first.servlet.ProductListServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>sit.int303.first.servlet.LoginServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>SimpleCalculatorServlet</servlet-name>
@@ -102,7 +77,14 @@
         <servlet-name>GetProductServlet</servlet-name>
         <url-pattern>/GetProduct</url-pattern>
     </servlet-mapping>
-    
+    <servlet-mapping>
+        <servlet-name>ProductListServlet</servlet-name>
+        <url-pattern>/ProductList</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             30

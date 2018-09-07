@@ -3,7 +3,7 @@
     Created on : Aug 8, 2018, 1:57:25 PM
     Author     : INT303
 --%>
- <%--<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core" %>--%>
+
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -27,10 +27,10 @@
             <input name="subjects" type ="checkbox" value="Computer Security"/>Computer Security<br>
             <input name="subjects" type ="checkbox" value="Software Process"/>Computer Security<br>
 
-            <input type="submit" value="submit"/>
-
+        <input type="submit" value="submit"/>
+       
         </form>
-
+        
         <hr>
 
         <!--param คืกการดึงตัวobjมาจากพารามิเตอร์-->
